@@ -5,10 +5,7 @@
         eejs.api.components.event.template = eejs.data.templates.event;
         eejs.api.events = eejs.vue.extend(eejs.api.components.events);
         eejs.api.eventsView = new eejs.api.events({
-            el: '#app',
-            components: {
-                'event': eejs.api.components.event
-            }
+            el: '#app'
         });
     }).catch( function(e){
         console.log(e);
