@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Simple Event List using eejs-api
+Plugin Name: Examples for the EEJS API
 Plugin URI: http://eventespresso.com
-Description: This plugin provides example usage of the eejs-api to build vue apps.  Just add <code>[EJS_EVENTS_LIST]`</code> to any page to see in action.
+Description: A bunch of examples of the eejs-api library in action. Various shortcodes to try out.  See README.md for more info.
 Version: 1.0
 Author: Darren Ethier
 Author URI: https://darrenethier.com
