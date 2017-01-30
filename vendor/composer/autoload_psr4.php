@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'EJSAPI\\' => array($baseDir . '/src'),
+    'Eejsapi\\' => array($baseDir . '/src'),
 );

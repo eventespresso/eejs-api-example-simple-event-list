@@ -1,7 +1,7 @@
 <?php
-namespace EEJSAPI;
+namespace Eejsapi;
 
-interface EejsApiShortcodeInterface
+interface ShortcodeInterface
 {
     public function registerScripts();
     public function shortcodeContent();

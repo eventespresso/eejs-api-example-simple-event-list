@@ -1,11 +1,11 @@
 <?php
-namespace EEJSAPI\shortcodes;
+namespace Eejsapi\shortcodes;
 
-use EEJSAPI\EejsApiShortcodeInterface;
+use Eejsapi\ShortcodeInterface;
 use EE_Registry;
 use EEH_Template;
 
-class SimpleEventList implements EejsApiShortcodeInterface
+class SimpleEventList implements ShortcodeInterface
 {
 
     public function registerScripts()

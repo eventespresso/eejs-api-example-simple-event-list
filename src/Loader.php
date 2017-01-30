@@ -1,8 +1,8 @@
 <?php
 
-namespace EEJSAPI;
+namespace Eejsapi;
 
-class EejsApiLoader
+class Loader
 {
     /**
      * @var EejsApiShortcodeInterface[]
@@ -29,7 +29,7 @@ class EejsApiLoader
     public function registerShortcodeScripts()
     {
         foreach ($this->shortcode_classes as $shortcode_class) {
-            if ($shortcode_class instanceof EejsApiShortcodeInterface) {
+            if ($shortcode_class instanceof ShortcodeInterface) {
                 $shortcode_class->registerScripts();
             }
         }
@@ -39,7 +39,7 @@ class EejsApiLoader
     protected function registerShortcodes()
     {
         foreach ($this->shortcode_classes as $shortcode_class) {
-            if ($shortcode_class instanceof EejsApiShortcodeInterface) {
+            if ($shortcode_class instanceof ShortcodeInterface) {
                 add_shortcode(
                     $shortcode_class->shortcodeTag(),
                     function () use ($shortcode_class) {
@@ -66,6 +66,6 @@ class EejsApiLoader
 
     protected function getClassNameFromFileName($filename)
     {
-        return str_replace('.php', '', $filename);
+        return 'Eejsapi\\shortcodes\\' . str_replace(EEJS_EXAMPLE_PLUGIN_DIR . 'src/shortcodes/', '', str_replace('.php', '', $filename));
     }
 }

@@ -9,12 +9,12 @@ class ComposerStaticInitbbd2840c3d74cbc56b34338a114b1193
     public static $prefixLengthsPsr4 = array (
         'E' => 
         array (
-            'EJSAPI\\' => 7,
+            'Eejsapi\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'EJSAPI\\' => 
+        'Eejsapi\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
