@@ -8,10 +8,13 @@ Author: Darren Ethier
 Author URI: https://darrenethier.com
 License: GPLv2
 */
+use EEJSAPI\EejsApiLoader;
 
 define( 'EEJS_EXAMPLE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'EEJS_EXAMPLE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'EEJS_EXAMPLE_VERSION', '1.0' );
+
+$loader = new EejsApiLoader();
 
 //first let's register the scripts we're going to use but not enqueue them.  This allows the shortcode handler to only
 //enqueue the script as needed.
@@ -54,3 +57,7 @@ function eejs_example_events_list() {
         true
     );
 }
+
+
+
+
