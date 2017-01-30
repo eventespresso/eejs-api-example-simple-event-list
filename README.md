@@ -4,6 +4,9 @@ This is an add-on for Event Espresso 4 that provides a basic example of utilizin
 
 > Note: requires EE version 4.9.26.p + to work.
 
+> Note: I deliberately broke composer convention here by committing the vendor directory.  This is just to make it more
+more user friendly to get the plugin up and running quicker (i.e you don't need composer).
+
 ## Usage
 
 1. Install the plugin on your site.
