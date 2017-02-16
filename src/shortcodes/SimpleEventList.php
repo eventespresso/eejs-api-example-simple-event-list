@@ -41,7 +41,7 @@ class SimpleEventList implements ShortcodeInterface
         return 'EEJS_EVENTS_LIST';
     }
 
-    public function shortcodeContent()
+    public function shortcodeContent($attributes = array())
     {
         //enqueue the script needed for the shortcode content
         wp_enqueue_script('eejs-example-event-list');
