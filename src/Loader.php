@@ -42,8 +42,8 @@ class Loader
             if ($shortcode_class instanceof ShortcodeInterface) {
                 add_shortcode(
                     $shortcode_class->shortcodeTag(),
-                    function () use ($shortcode_class) {
-                        return $shortcode_class->shortcodeContent();
+                    function ($attributes) use ($shortcode_class) {
+                        return $shortcode_class->shortcodeContent($attributes);
                     }
                 );
             }
