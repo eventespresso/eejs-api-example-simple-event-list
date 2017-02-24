@@ -16,7 +16,7 @@
 
        var eventView = new eejs.vue({
            el: '#app',
-           'components' : {
+           components : {
                'eventForm' : EventForm,
                'eventPreview' : EventPreview
            }
